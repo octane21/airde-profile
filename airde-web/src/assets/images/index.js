@@ -1,0 +1,12 @@
+export { default as logoAirde } from "./logo_airde.png";
+export { default as logoAirdeExplained } from "./logo_airde_explained.png";
+export { default as digitalTwin } from "./digital-twin.png";
+export { default as intelligenceLayerDiagram } from "./a_high_tech_futuristic_airde_intelligence_layer_diagram._a_centra.png";
+export { default as digitalEngineeringVisualization } from "./a_high_fidelity_industrial_digital_engineering_visualization._a_.png";
+export { default as aiDecisionSupportVisualization } from "./a_sophisticated_ai_decision_support_visualization._a_central.png";
+export { default as academyVisualization } from "./an_advanced_industrial_learning_and_certification_visualizatio.png";
+export { default as enterpriseDashboard } from "./an_enterprise_grade_industrial_ai_dashboard_on_a_sleek_laptop_s.png";
+export { default as leadershipTeam } from "./a_group_of_diverse_professional_leaders_in_a_high_tech_cor.png";
+export { default as aiResearchLab } from "./a_minimalist_high_fidelity_industrial_ai_research_lab_with_.png";
+export { default as assetIntelligenceDashboard } from "./an_enterprise_grade_industrial_ai_dashboard_for_the_navy.png";
+export { default as hologramAnimation } from "./animasi_hologram.mp4";
