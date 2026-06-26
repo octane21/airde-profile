@@ -12,6 +12,22 @@ import {
   leadershipTeam,
 } from "../assets/images";
 import ContactCta from "../components/ContactCta";
+import DocumentLibrary from "../components/DocumentLibrary";
+
+const PORTFOLIO_HIGHLIGHTS = [
+  {
+    name: "AIRDE Project Manager",
+    description:
+      "Platform manajemen proyek internal AIRDE untuk memantau progres implementasi, alokasi tim, dan milestone proyek klien secara real-time.",
+    url: "https://airde-project-manager.vercel.app/",
+  },
+  {
+    name: "AIRDE Pipeline",
+    description:
+      "Dashboard pemantauan pipeline industri untuk visualisasi kondisi aset, deteksi anomali, dan status integritas jaringan secara real-time.",
+    url: "https://airde-pipeline.vercel.app/",
+  },
+];
 
 export default function Beranda() {
   useEffect(() => {
@@ -368,77 +384,56 @@ export default function Beranda() {
         </div>
       </section>
 
-      {/* Section 5: Case Studies */}
+      {/* Section 5: Portfolio Highlight */}
       <section className="py-24 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-container-padding">
           <h2 className="font-headline-md text-display-lg mb-16 text-center">Nilai Bisnis yang Terbukti</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <div className="glass-card rounded-2xl overflow-hidden flex flex-col md:flex-row h-full border border-white/5">
-              <div
-                className="w-full md:w-2/5 h-64 md:h-auto bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-500"
-                style={{
-                  backgroundImage:
-                    "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCOpeJ8W9X1-yqA4B9AlqyFU4c1SYKfck6SZEqzEfgRPlu4fq5mQDietyDNHi_jzuwQikVMvngYocJutRFkg74fBDbo4oNbqhsvASJRboOkAoGAsa8Tf_Hilr6oXeKRDmEY4tgJWyBJu7A8eRtI7I4E4C3rQ3EtiTlFYQPxKo8AYYtEejg8hmjf15eVXzahRsn2iwmcLyYzTR-8E-rX6ig-2T_kMcdnjPumicG03-QSkCobTQR7R6RlDDgd2DN_F11hqqcqsPEBDK86')",
-                }}
-              ></div>
-              <div className="p-8 flex flex-col justify-between md:w-3/5">
-                <div className="space-y-4">
-                  <span className="text-label-sm font-label-sm text-primary uppercase font-bold tracking-widest">
-                    Energi Lepas Pantai
+            {PORTFOLIO_HIGHLIGHTS.map((site) => (
+              <a
+                key={site.url}
+                href={site.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block bg-surface-container-lowest/60 border border-outline-variant/20 rounded-2xl overflow-hidden hover:border-primary/50 transition-all shadow-sm glass-card"
+              >
+                <div className="flex items-center gap-2 px-4 py-3 bg-surface-container-high border-b border-outline-variant/20">
+                  <span className="w-2.5 h-2.5 rounded-full bg-error/70"></span>
+                  <span className="w-2.5 h-2.5 rounded-full bg-secondary/70"></span>
+                  <span className="w-2.5 h-2.5 rounded-full bg-tertiary/70"></span>
+                  <span className="ml-2 flex-1 truncate text-xs text-on-surface-variant bg-surface-container-lowest rounded px-2 py-1">
+                    {site.url}
                   </span>
-                  <h3 className="font-headline-md text-headline-md leading-tight">
-                    Pengurangan Downtime Tak Terencana Sebesar 60%
+                </div>
+                <div className="relative h-64 bg-surface-container-lowest overflow-hidden">
+                  <iframe
+                    title={site.name}
+                    src={site.url}
+                    loading="lazy"
+                    className="w-full h-full border-0 pointer-events-none"
+                  ></iframe>
+                  <div className="absolute inset-0 flex items-center justify-center bg-background/0 group-hover:bg-background/40 transition-colors">
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity bg-primary-container text-on-primary-container px-5 py-2.5 rounded-full font-bold flex items-center gap-2">
+                      Kunjungi Situs <span className="material-symbols-outlined text-sm">open_in_new</span>
+                    </span>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <h3 className="font-headline-md text-headline-md text-on-surface mb-2 group-hover:text-primary transition-colors">
+                    {site.name}
                   </h3>
-                  <p className="text-on-surface-variant">
-                    Implementasi Asset Intelligence di 12 platform yang menghasilkan nol kegagalan
-                    kritis dalam 18 bulan.
-                  </p>
+                  <p className="text-on-surface-variant font-body-md">{site.description}</p>
                 </div>
-                <div className="flex gap-8 pt-6">
-                  <div>
-                    <p className="text-3xl font-bold text-primary">$12M</p>
-                    <p className="text-label-sm text-on-surface-variant uppercase font-medium">Savings Tahunan</p>
-                  </div>
-                  <div>
-                    <p className="text-3xl font-bold text-primary">15x</p>
-                    <p className="text-label-sm text-on-surface-variant uppercase font-medium">ROI Tercapai</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="glass-card rounded-2xl overflow-hidden flex flex-col md:flex-row h-full border border-white/5">
-              <div
-                className="w-full md:w-2/5 h-64 md:h-auto bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-500"
-                style={{
-                  backgroundImage:
-                    "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAck_DxBt4aoe_kF-lrLwW4x4bn7SZhhGzZCcsCVRpWAom3CaXidCXEJJArcIvc9axsbkc6Uk8hzNhFMjRaAs9GqAOL4rjj3Ll5cQKGdrvAJe7eWbFI2TBKD3rU15yO2sG9IHfLkH-kcrFM_BkHu4YdsLIhYFpaxFCDo98Uw7MnYc8msESm2Sy2hPVwVp14SPjIRO_-sXC7DrgRNgdpz_sa27SET5YhHQtx7c71FMt0m8WhMpdCmTVrsXcxhJLyzhkkZABTFrF08hwZ')",
-                }}
-              ></div>
-              <div className="p-8 flex flex-col justify-between md:w-3/5">
-                <div className="space-y-4">
-                  <span className="text-label-sm font-label-sm text-secondary uppercase font-bold tracking-widest">
-                    Terminal Operator Global
-                  </span>
-                  <h3 className="font-headline-md text-headline-md leading-tight">
-                    Optimasi Strategi Siklus Hidup Aset
-                  </h3>
-                  <p className="text-on-surface-variant">
-                    Memperpanjang usia aset kritis hingga 8 tahun melalui pemodelan Digital Engineering
-                    tingkat lanjut.
-                  </p>
-                </div>
-                <div className="flex gap-8 pt-6">
-                  <div>
-                    <p className="text-3xl font-bold text-secondary">22%</p>
-                    <p className="text-label-sm text-on-surface-variant uppercase font-medium">Capex Ditunda</p>
-                  </div>
-                  <div>
-                    <p className="text-3xl font-bold text-secondary">100%</p>
-                    <p className="text-label-sm text-on-surface-variant uppercase font-medium">Kepatuhan Risiko</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+              </a>
+            ))}
+          </div>
+          <div className="text-center mt-12">
+            <Link
+              to="/portfolio"
+              className="inline-block bg-primary-container text-on-primary-container px-8 py-3.5 rounded-full font-bold hover:brightness-110 transition-all shadow-xl shadow-primary-container/20"
+            >
+              Lihat Portofolio
+            </Link>
           </div>
         </div>
       </section>
@@ -500,60 +495,18 @@ export default function Beranda() {
                 Tetap terdepan dengan riset terbaru dalam AI industri.
               </p>
             </div>
-            <button className="text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all group">
+            <Link
+              to="/resources"
+              className="text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all group"
+            >
               Lihat Semua{" "}
               <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
                 arrow_forward
               </span>
-            </button>
+            </Link>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-surface-container p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all glass-card">
-              <span className="text-label-sm font-label-sm text-primary uppercase font-bold tracking-widest">
-                Artikel
-              </span>
-              <h4 className="font-headline-md text-2xl mt-4 mb-4">
-                Masa Depan Pemeliharaan Prediktif di Tahun 2024
-              </h4>
-              <p className="text-on-surface-variant text-body-md line-clamp-3">
-                Bagaimana LLM dan Predictive AI menyatu untuk menciptakan asisten keputusan industri
-                yang otonom...
-              </p>
-              <a className="inline-flex items-center gap-2 mt-8 text-primary font-bold hover:underline" href="#">
-                Baca Selengkapnya <span className="material-symbols-outlined text-sm">open_in_new</span>
-              </a>
-            </div>
-            <div className="bg-surface-container p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all glass-card">
-              <span className="text-label-sm font-label-sm text-primary uppercase font-bold tracking-widest">
-                White Paper
-              </span>
-              <h4 className="font-headline-md text-2xl mt-4 mb-4">
-                Mengoptimalkan ROI Aset dengan Intelligence Layer
-              </h4>
-              <p className="text-on-surface-variant text-body-md line-clamp-3">
-                Analisis mendalam tentang bagaimana infrastruktur data yang tepat dapat menghasilkan
-                pengembalian modal yang signifikan...
-              </p>
-              <a className="inline-flex items-center gap-2 mt-8 text-primary font-bold hover:underline" href="#">
-                Download PDF <span className="material-symbols-outlined text-sm">download</span>
-              </a>
-            </div>
-            <div className="bg-surface-container p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all glass-card">
-              <span className="text-label-sm font-label-sm text-primary uppercase font-bold tracking-widest">
-                Webinar
-              </span>
-              <h4 className="font-headline-md text-2xl mt-4 mb-4">
-                Transformasi Digital untuk Industri Lepas Pantai
-              </h4>
-              <p className="text-on-surface-variant text-body-md line-clamp-3">
-                Bergabunglah dengan panel ahli kami saat mereka membahas studi kasus dunia nyata tentang
-                digitalisasi aset lepas pantai...
-              </p>
-              <a className="inline-flex items-center gap-2 mt-8 text-primary font-bold hover:underline" href="#">
-                Tonton Rekaman <span className="material-symbols-outlined text-sm">play_circle</span>
-              </a>
-            </div>
-          </div>
+
+          <DocumentLibrary category="resources" embedded limit={3} readOnly />
         </div>
       </section>
 

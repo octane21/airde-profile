@@ -103,8 +103,18 @@ function UploadModal({ category, token, onClose, onUploaded }) {
   );
 }
 
-export default function DocumentLibrary({ category, title, description, embedded = false, search = "", viewMode = "grid" }) {
-  const { isAdmin, token } = useAuth();
+export default function DocumentLibrary({
+  category,
+  title,
+  description,
+  embedded = false,
+  search = "",
+  viewMode = "grid",
+  limit,
+  readOnly = false,
+}) {
+  const { isAdmin: isAdminRole, token } = useAuth();
+  const isAdmin = isAdminRole && !readOnly;
   const [docs, setDocs] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -130,12 +140,13 @@ export default function DocumentLibrary({ category, title, description, embedded
   }, [fetchDocs]);
 
   const query = search.trim().toLowerCase();
-  const visibleDocs = query
+  const filteredDocs = query
     ? docs.filter(
         (doc) =>
           doc.title.toLowerCase().includes(query) || (doc.description || "").toLowerCase().includes(query)
       )
     : docs;
+  const visibleDocs = limit ? filteredDocs.slice(0, limit) : filteredDocs;
 
   const handleDelete = async (id) => {
     if (!window.confirm("Hapus dokumen ini?")) return;
