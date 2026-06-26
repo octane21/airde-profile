@@ -9,6 +9,7 @@ const FOOTER_COLUMNS = [
       { label: "Risk Intelligence", to: "/solutions/risk-intelligence" },
       { label: "Digital Engineering", to: "/solutions/digital-engineering" },
       { label: "AI Decision Support", to: "/solutions/ai-decision-support" },
+      { label: "AIRDE Academy", to: "/solutions/academy" },
     ],
   },
   {
@@ -25,7 +26,6 @@ const FOOTER_COLUMNS = [
     links: [
       { label: "About AIRDE", to: "/about" },
       { label: "Platform", to: "/platform" },
-      { label: "AIRDE Academy", to: "/academy" },
       { label: "Resources", to: "/resources" },
       { label: "Contact Us", to: "/about#contact-us" },
     ],

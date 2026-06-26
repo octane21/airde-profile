@@ -37,13 +37,13 @@ function App() {
         <Route path="/solutions/digital-engineering" element={<DigitalEngineering />} />
         <Route path="/solutions/ai-decision-support" element={<AiDecisionSupport />} />
         <Route path="/solutions/consultation" element={<Consultation />} />
+        <Route path="/solutions/academy" element={<Academy />} />
         <Route path="/platform" element={<PlatformArchitecture />} />
         <Route path="/industries" element={<Industries />} />
         <Route path="/industries/oil-gas" element={<OilGas />} />
         <Route path="/industries/ports-maritime" element={<PortsMaritime />} />
         <Route path="/industries/power-utilities" element={<PowerUtilities />} />
         <Route path="/industries/manufacturing" element={<Manufacturing />} />
-        <Route path="/academy" element={<Academy />} />
         <Route path="/resources" element={<ResourcesLibrary />} />
         <Route path="/resources/articles" element={<ResourcesArticles />} />
         <Route path="/resources/case-studies" element={<ResourcesCaseStudies />} />

@@ -234,7 +234,7 @@ export default function Solutions() {
               </Link>
               {/* AIRDE Academy */}
               <Link
-                to="/academy"
+                to="/solutions/academy"
                 className="flex flex-col h-full bg-surface-container-lowest/60 border border-outline-variant/20 rounded-xl overflow-hidden group hover:border-primary/50 transition-all shadow-sm"
               >
                 <div className="relative h-56 overflow-hidden">

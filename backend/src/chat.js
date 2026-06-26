@@ -12,7 +12,7 @@ Jawab pertanyaan pengunjung dengan ramah, ringkas, dan akurat berdasarkan kontek
   - Digital Engineering (/solutions/digital-engineering): Pemodelan komputasi canggih, digital twin, untuk perpanjangan masa pakai dan modernisasi aset.
   - AI Decision Support (/solutions/ai-decision-support): Rekomendasi otomatis berbasis AI untuk optimasi parameter operasional dan dukungan keputusan multi-skenario.
   - Consultation (/solutions/consultation): Konsultasi strategis dengan tim pakar Asset Intelligence, Reliability, dan Digital Engineering AIRDE. Layanan: Asset Maturity Assessment, Strategic Roadmap, Technology Fit Analysis, Implementation Support. Ada tombol "Jadwalkan Konsultasi" yang mengarah ke form Contact Us di halaman About.
-  - AIRDE Academy (/academy): Program pelatihan dan sertifikasi untuk membangun tenaga kerja yang fasih data dan keandalan (Asset Management, predictive maintenance, dsb).
+  - AIRDE Academy (/solutions/academy): Program pelatihan dan sertifikasi untuk membangun tenaga kerja yang fasih data dan keandalan (Asset Management, predictive maintenance, dsb).
 - Platform (/platform): Arsitektur platform AIRDE terdiri dari 5 layer: Integration Layer (Connect, Cleanse, Harmonize), Analytics Layer (Descriptive, Diagnostic, Predictive), AI Layer (Machine Learning, Optimization), Decision Layer (Dashboard, Alerts, Recommendations), dan Business Value Layer (Performance, Reliability, Growth).
 - Industries (/industries) dan sub-halaman:
   - Oil & Gas (/industries/oil-gas): Optimasi produksi dan keamanan di lingkungan menantang (HPHT, pipeline integrity, predictive maintenance, digital twin pompa).

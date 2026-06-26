@@ -217,7 +217,7 @@ export default function Beranda() {
               />
             </Link>
             <Link
-              to="/academy"
+              to="/solutions/academy"
               className="bg-surface p-8 rounded-2xl border border-outline-variant/30 hover:border-primary transition-all group glass-card block"
             >
               <div className="w-14 h-14 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6">
@@ -466,7 +466,7 @@ export default function Beranda() {
             </ul>
 
             <Link
-              to="/academy"
+              to="/solutions/academy"
               className="inline-block bg-primary-container text-on-primary-container px-8 py-3.5 rounded-full font-bold hover:brightness-110 transition-all shadow-xl shadow-primary-container/20"
             >
               Pelajari Selengkapnya

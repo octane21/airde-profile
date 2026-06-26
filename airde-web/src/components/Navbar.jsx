@@ -17,7 +17,7 @@ const NAV_LINKS = [
       { label: "Digital Engineering", to: "/solutions/digital-engineering" },
       { label: "AI Decision Support", to: "/solutions/ai-decision-support" },
       { label: "Consultation", to: "/solutions/consultation" },
-      { label: "AIRDE Academy", to: "/academy" },
+      { label: "AIRDE Academy", to: "/solutions/academy" },
     ],
   },
   { label: "Platform", to: "/platform" },
