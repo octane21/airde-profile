@@ -198,7 +198,6 @@ export default function DigitalEngineering() {
       <ContactCta
         title="Siap untuk Masa Depan Engineering?"
         description="Mulai transformasi digital Anda hari ini dengan solusi teknik berbasis data yang presisi."
-        primaryLabel="Request Live Demo"
       />
     </>
   );

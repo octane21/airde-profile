@@ -244,7 +244,6 @@ export default function PortsMaritime() {
           title="Ready to Transform Your Port?"
           description="Hubungi tim ahli kami untuk demo kustom atau jelajahi bagaimana mitra kami mencapai efisiensi maksimal."
           primaryLabel="Schedule a Consultation"
-          secondaryLabel="Download Case Studies"
         />
       </main>
     </>

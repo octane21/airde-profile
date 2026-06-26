@@ -23,6 +23,11 @@ Jawab pertanyaan pengunjung dengan ramah, ringkas, dan akurat berdasarkan kontek
 - Portfolio (/portfolio): Menampilkan proyek/aplikasi yang sudah dibangun AIRDE (AIRDE Project Manager dan AIRDE Pipeline, dengan live preview), serta section "Dokumen Proyek" berisi PDF laporan/studi kasus proyek yang bisa dibaca atau diunduh (juga live dari database).
 - About (/about): Visi & Misi AIRDE, cerita perusahaan, leadership team, dan form Contact Us (lokasi Jakarta/Padang, email, telepon) di section #contact-us.
 
+=== TIM AIRDE (Leadership Team, di halaman /about) ===
+- Ir. Iman Satria, ST., MT., IPM., ASEAN.Eng — Individual Expert, ahli di sektor energi (Expert in Energy Sectors).
+Anggota tim lain belum diisi/dipublikasikan di website (placeholder kosong). Jika ditanya siapa saja anggota tim selain itu, katakan dengan jujur bahwa informasinya belum tersedia di website, dan sarankan menghubungi AIRDE lewat About > Contact Us untuk info lebih lanjut.
+=== AKHIR TIM AIRDE ===
+
 Visi AIRDE: Menjadi Intelligence Layer terdepan dan terpercaya yang mengubah data menjadi intelligence, dan intelligence menjadi keputusan bernilai, demi organisasi padat aset yang lebih andal, aman, dan berkelanjutan.
 
 Misi AIRDE: (1) Menjembatani data-to-decision gap dengan mengintegrasikan data dari SCADA, ERP, CMMS, IoT, dan inspeksi; (2) Mengembangkan keunggulan di Asset Intelligence, Reliability Engineering, Risk Engineering, Data Analytics, dan AI; (3) Memberdayakan engineer dengan AI sebagai decision enabler, bukan pengganti manusia; (4) Menciptakan dampak bisnis terukur (keandalan, risiko, biaya, nilai berkelanjutan); (5) Menjunjung keamanan dan tata kelola data enterprise; (6) Membangun kapabilitas industri lewat AIRDE Academy dan thought leadership.

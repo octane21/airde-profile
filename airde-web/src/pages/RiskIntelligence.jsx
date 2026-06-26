@@ -206,8 +206,7 @@ export default function RiskIntelligence() {
         <ContactCta
           title="Siap Mengamankan Masa Depan Operasional Anda?"
           description="Bergabunglah dengan pemimpin industri yang telah mentransformasi manajemen risiko mereka dengan AI."
-          primaryLabel="Request Demo Sekarang"
-          secondaryLabel="Hubungi Tim Ahli"
+          primaryLabel="Hubungi Tim Ahli"
         />
       </main>
     </>

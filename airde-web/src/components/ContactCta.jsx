@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 export default function ContactCta({
   title = "Siap Memulai Transformasi Anda?",
   description = "Hubungi tim ahli kami untuk mendiskusikan bagaimana AIRDE dapat disesuaikan dengan kebutuhan operasional Anda.",
-  primaryLabel = "Request Demo",
-  secondaryLabel = "Talk to an Expert",
+  primaryLabel = "Hubungi Kami",
 }) {
   return (
     <section className="py-xl px-gutter mb-xl">
@@ -20,12 +19,6 @@ export default function ContactCta({
             className="bg-secondary-container text-on-secondary-container px-8 py-3.5 rounded-full font-bold hover:brightness-110 transition-all shadow-lg shadow-secondary-container/20"
           >
             {primaryLabel}
-          </Link>
-          <Link
-            to="/about#contact-us"
-            className="border border-outline px-8 py-3.5 rounded-full font-bold text-on-surface hover:bg-surface-variant transition-all"
-          >
-            {secondaryLabel}
           </Link>
         </div>
       </div>

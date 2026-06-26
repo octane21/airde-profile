@@ -267,7 +267,6 @@ export default function OilGas() {
         title="Siap Mengamankan Masa Depan Energi Anda?"
         description="Bergabunglah dengan para pemimpin global yang memanfaatkan AIRDE untuk mengubah kompleksitas industri menjadi keunggulan kompetitif."
         primaryLabel="Konsultasi dengan Ahli Energi"
-        secondaryLabel="Jadwalkan Audit Lokasi"
       />
     </>
   );

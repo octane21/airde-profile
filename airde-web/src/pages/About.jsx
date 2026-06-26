@@ -256,7 +256,7 @@ export default function About() {
             <div className="lg:col-span-5 grid grid-cols-1 gap-md">
               <div className="p-md bg-surface-container/50 border-l-2 border-primary hover:bg-surface-container transition-colors">
                 <h4 className="font-headline-md text-[18px] text-white"> Ir. Iman Satria.,ST.MT.IPM.ASEAN.Eng</h4>
-                <p className="font-label-sm text-primary uppercase text-[10px] mb-xs">Indivisual Expert</p>
+                <p className="font-label-sm text-primary uppercase text-[10px] mb-xs">Individual Expert</p>
                 <p className="font-body-md text-on-surface-variant text-sm">
                   Expert in Energy Sectors
                 </p>
@@ -366,12 +366,6 @@ export default function About() {
                     className="bg-primary text-on-primary px-xl py-md font-label-sm text-label-sm uppercase tracking-widest hover:shadow-[0_0_20px_rgba(180,197,255,0.4)] transition-all"
                   >
                     Talk To An Expert
-                  </Link>
-                  <Link to="/about#contact-us"
-                    type="button"
-                    className="border border-primary text-primary px-xl py-md font-label-sm text-label-sm uppercase tracking-widest hover:bg-primary/10 transition-all"
-                  >
-                    Request Demo
                   </Link>
                 </div>
               </form>

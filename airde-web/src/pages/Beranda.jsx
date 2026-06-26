@@ -66,9 +66,6 @@ export default function Beranda() {
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
               <Link to="/about#contact-us" className="bg-secondary-container text-on-secondary-container px-8 py-3.5 rounded-full font-bold hover:brightness-110 transition-all shadow-lg shadow-secondary-container/20">
-                Request Demo
-              </Link>
-              <Link to="/about#contact-us" className="border border-outline px-8 py-3.5 rounded-full font-bold text-on-surface hover:bg-surface-variant transition-all">
                 Talk To An Expert
               </Link>
             </div>

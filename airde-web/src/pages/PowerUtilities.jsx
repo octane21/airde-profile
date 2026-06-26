@@ -146,7 +146,6 @@ export default function PowerUtilities() {
           title="Ready to Secure Your Energy Future?"
           description="Hubungi tim ahli kami untuk simulasi ROI dan integrasi AIRDE ke dalam infrastruktur jaringan utilitas Anda saat ini."
           primaryLabel="Book Consultant Visit"
-          secondaryLabel="View Case Studies"
         />
       </main>
 

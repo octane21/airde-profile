@@ -221,9 +221,6 @@ export default function ResourcesCaseStudies() {
               </p>
               <div className="flex flex-wrap gap-6">
                 <button className="px-10 py-4 rounded bg-primary text-on-primary font-bold hover:brightness-110 transition-all shadow-[0_0_30px_rgba(37,99,235,0.4)]">
-                  Jadwalkan Demo
-                </button>
-                <button className="px-10 py-4 rounded border border-primary/40 text-primary font-bold hover:bg-primary/5 transition-all backdrop-blur-md">
                   Hubungi Tim Penjualan
                 </button>
               </div>
